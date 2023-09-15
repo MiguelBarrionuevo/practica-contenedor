@@ -8,6 +8,13 @@ public class Task {
     private Date dueDate;
     private String status;
 
+    public Task(int taskId, String name, Date dueDate, String status){
+        this.taskId = taskId;
+        this.name = name;
+        this.dueDate = dueDate;
+        this.status = status;
+    }
+
     public int getTaskId() {
         return taskId;
     }
@@ -38,5 +45,10 @@ public class Task {
 
     public void setStatus(String status) {
         this.status = status;
+    }
+
+    @Override
+    public String toString(){
+        return "toString";
     }
 }
